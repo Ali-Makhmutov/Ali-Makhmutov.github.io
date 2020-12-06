@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмы</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">Clover</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../movie/movie.html">Фильмы</a></li>
+                        <li><a href="../serial/serial.html">Сериалы</a></li>
+                        <li><a href="../anime/anime.html">Аниме</a></li>
+                        <!-- <li><button class="btn btn-success" onclick="sign()">Войти</button></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="main">
+        <h1>Фильмы смотреть онлайн</h1>
+        <p style="color: coral; max-width: 710px;" >Вы любите смотреть фильмы онлайн и проводите много времени, прочесывая сайты в поисках чего-нибудь интересного? Стоит задержаться на clover.ru – фильмов, которые собраны у нас, вам хватит надолго.</p>
+
+        <div class="menu">
+            <div id="film" onclick="window.location.reload()">Фильмы</div>
+            <div id="minimenu">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 17px;"> Жанр <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Комедия</a></li>
+                      <li><a href="#">Драма</a></li>
+                      <li><a href="#">Боевик</a></li>
+                      <li><a href="#">Ужасы</a></li>
+                    </ul>
+                  </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 17px;"> Год <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">2020</a></li>
+                      <li><a href="#">2019</a></li>
+                      <li><a href="#">2018</a></li>
+                      <li><a href="#">2017</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <a href="film/ford.html">
+                <img src="photo/ford.webp" >
+                <p>Ford против Ferrari</p>
+            </a>
+            <a href="film/dostat.html">
+                <img src="photo/dost.webp" >
+                <p>Достать ножи</p>
+            </a>
+            <a href="film/ono2.html">
+                <img src="photo/ono2.webp" >
+                <p>Оно 2</p>
+            </a>
+            
+            <a href="film/aven.html">
+                <img src="photo/msti.webp" >
+                <p>Мстители:Война бесконечности</p>
+            </a>
+            <a href="">
+                <img src="photo/stra.webp" >
+                <p>Стражи Галактики 2</p>
+            </a>
+            <a href="">
+                <img src="photo/para.webp"  >
+                <p>Паразиты</p>
+            </a>
+            <a href="">
+                <img src="photo/volk.webp" >
+                <p>Волк с Уолл-Стрит</p>
+            </a>
+            <a href="">
+                <img src="photo/inte.webp" >
+                <p>Интерстеллар</p>
+            </a>
+            <a href="">
+                <img src="photo/harr.webp"  >
+                <p>Гарри Поттер:Дары смерти 2</p>
+            </a>
+            <a href="">
+                <img src="photo/pira.webp" >
+                <p>Пираты Карибского моря:На краю света</p>
+            </a>
+            <a href="">
+                <img src="photo/obla.webp" >
+                <p>Области тьмы</p>
+            </a>
+            <a href="">
+                <img src="photo/delo.webp" >
+                <p>Дело Храбрых</p>
+            </a>
+        </div>
+        
+    </div>
+        
+    <footer>
+        <nav>
+            <a href="movie/movie.html">Фильмы</a>
+            <a href="serial/serial.html">Сериалы</a>
+            <a href="anime/anime.html">Аниме</a>
+        </nav>
+        <h2 onclick="window.location.reload()" style="cursor: pointer;">Clover</h2>
+        <div class="social">
+            
+            <a href=""><img src="../icons/ins.png" width="40px"></a>
+            <a href=""><img src="../icons/face.png" width="40px" style="background-color: white; border-radius: 50%;"></a>
+            <a href=""><img src="../icons/twit.png" width="40px" style="background-color: white; border-radius: 50%;"></a>
+            <a href=""><img src="../icons/what.PNG" width="40px" style="background-color: white; border-radius: 50%;"></a>
+        </div>
+        
+    </footer>
+    
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
